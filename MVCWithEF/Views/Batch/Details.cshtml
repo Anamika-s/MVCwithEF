@@ -1,0 +1,51 @@
+﻿@model MVCWithEF.Models.Batch
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+@if (ViewBag.msg != null)
+{
+    @ViewBag.msg
+}
+else
+{
+
+                    <div>
+                        <h4>Batch</h4>
+                        <hr />
+                        <dl class="dl-horizontal">
+                            <dt>
+                                @Html.DisplayNameFor(model => model.BatchName)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.BatchName)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.StartDate)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.StartDate)
+                            </dd>
+
+                            <dt>
+                                @Html.DisplayNameFor(model => model.Trainer)
+                            </dt>
+
+                            <dd>
+                                @Html.DisplayFor(model => model.Trainer)
+                            </dd>
+
+                        </dl>
+                    </div>
+
+                    <p>
+                        @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+                        @Html.ActionLink("Back to List", "Index")
+                    </p>
+}
