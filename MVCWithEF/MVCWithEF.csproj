@@ -128,7 +128,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Context\AppDbContext.cs" />
     <Compile Include="Controllers\BatchController.cs" />
+    <Compile Include="Controllers\Batches1Controller.cs" />
     <Compile Include="Controllers\BatchesController.cs" />
+    <Compile Include="Controllers\CoursesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -157,8 +159,23 @@
     <Compile Include="Migrations\202205101032475_Validation1.Designer.cs">
       <DependentUpon>202205101032475_Validation1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202205110456406_Added C Validators.cs" />
+    <Compile Include="Migrations\202205110456406_Added C Validators.Designer.cs">
+      <DependentUpon>202205110456406_Added C Validators.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205110518469_FK.cs" />
+    <Compile Include="Migrations\202205110518469_FK.Designer.cs">
+      <DependentUpon>202205110518469_FK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202205110601387_Added Student.cs" />
+    <Compile Include="Migrations\202205110601387_Added Student.Designer.cs">
+      <DependentUpon>202205110601387_Added Student.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Batch.cs" />
+    <Compile Include="Models\Course.cs" />
+    <Compile Include="Models\DurationValidatorAttribute.cs" />
+    <Compile Include="Models\Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -207,6 +224,16 @@
     <Content Include="Views\Batches\Details.cshtml" />
     <Content Include="Views\Batches\Edit.cshtml" />
     <Content Include="Views\Batches\Index.cshtml" />
+    <Content Include="Views\Courses\Create.cshtml" />
+    <Content Include="Views\Courses\Delete.cshtml" />
+    <Content Include="Views\Courses\Details.cshtml" />
+    <Content Include="Views\Courses\Edit.cshtml" />
+    <Content Include="Views\Courses\Index.cshtml" />
+    <Content Include="Views\Batches1\Create.cshtml" />
+    <Content Include="Views\Batches1\Delete.cshtml" />
+    <Content Include="Views\Batches1\Details.cshtml" />
+    <Content Include="Views\Batches1\Edit.cshtml" />
+    <Content Include="Views\Batches1\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -242,6 +269,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202205101032475_Validation1.resx">
       <DependentUpon>202205101032475_Validation1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205110456406_Added C Validators.resx">
+      <DependentUpon>202205110456406_Added C Validators.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205110518469_FK.resx">
+      <DependentUpon>202205110518469_FK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202205110601387_Added Student.resx">
+      <DependentUpon>202205110601387_Added Student.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

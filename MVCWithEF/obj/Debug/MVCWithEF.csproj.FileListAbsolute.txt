@@ -88,3 +88,6 @@ C:\Users\Anamika\source\repos\MVCWithEF\MVCWithEF\obj\Debug\MVCWithEF.Migrations
 C:\Users\Anamika\source\repos\MVCWithEF\MVCWithEF\obj\Debug\MVCWithEF.Migrations.NotNullable.resources
 C:\Users\Anamika\source\repos\MVCWithEF\MVCWithEF\obj\Debug\MVCWithEF.Migrations.Validation.resources
 C:\Users\Anamika\source\repos\MVCWithEF\MVCWithEF\obj\Debug\MVCWithEF.Migrations.Validation1.resources
+C:\Users\Anamika\source\repos\MVCWithEF\MVCWithEF\obj\Debug\MVCWithEF.Migrations.AddedCValidators.resources
+C:\Users\Anamika\source\repos\MVCWithEF\MVCWithEF\obj\Debug\MVCWithEF.Migrations.FK.resources
+C:\Users\Anamika\source\repos\MVCWithEF\MVCWithEF\obj\Debug\MVCWithEF.Migrations.AddedStudent.resources

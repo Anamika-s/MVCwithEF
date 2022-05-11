@@ -26,7 +26,7 @@ namespace MVCWithEF.Controllers
 
         Batch Search (int? id)
         {
-            var batch = db.Batches.FirstOrDefault(x => x.Id == id);
+            var batch = db.Batches.FirstOrDefault(x => x.BatchId == id);
             return batch;
         }
         public ActionResult Details(int? id)
@@ -56,10 +56,14 @@ namespace MVCWithEF.Controllers
         [HttpPost]
         public ActionResult Create(Batch batch)
         {
-            db.Batches.Add(batch);
-            db.SaveChanges();
-            return RedirectToAction("Index");
-
+            if (ModelState.IsValid)
+            {
+                db.Batches.Add(batch);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            else
+                return View(batch);
         }
 
 
@@ -87,7 +91,7 @@ namespace MVCWithEF.Controllers
             {
                  foreach(Batch temp in db.Batches)
                 {
-                    if(temp.Id == id)
+                    if(temp.BatchId == id)
                     {
                         temp.BatchName = batch.BatchName;
                         temp.StartDate = batch.StartDate;
